@@ -32,7 +32,7 @@ button:hover{
   color: white;
   background: black;
   border-radius: 15px;
-  transition: 1s;
+  transition: 0.5s;
 }
 /*  global classes */
 
@@ -42,13 +42,28 @@ section{
   justify-content: center;
   margin: 0 auto;
   margin-top: 10rem;
-  width: 50%;
+  width: 80%;
   background: #fdfdfd;
   padding: 1em;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
 }
 /* form */
+.red{
+  background: red;
+  color: white;
+}
+.green{
+  background: limegreen;
+  color: white;
+}
+.alert{
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.3em 0;
+  text-align: center;
+  border-radius: 15px;
+}
 .todo-form{
   display: flex;
   flex-direction: column;
@@ -80,6 +95,7 @@ h1{
 }
 .form-control button{
   width: 15%;
+  font-size: 1rem;
 }
 
 /* todo Container */
@@ -88,6 +104,9 @@ h1{
   flex-direction: column;
   width: 100%;
   visibility: hidden;
+}
+.visibility{
+  visibility: visible;
 }
 .todo-list{
   width: 100%;
@@ -127,11 +146,11 @@ h1{
 .delete-btn:hover{
   background: red;
 }
-.clear-all{
+.delete-all{
   padding: 1em;
   font-size: 1rem;
   color: red;
 }
-.clear-all:hover{
+.delete-all:hover{
   background: red;
 }
